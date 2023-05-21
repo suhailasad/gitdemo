@@ -14,13 +14,9 @@ Remove file:
 
 	git rm <file>
 
-Move or rename file:
-
-	git mv <from> <to>
-
 Commit changes:
 
-	git commit
+	git commit -m "message"
 
 Show changes:
 
@@ -68,13 +64,9 @@ Delete branch:
 
 	git branch -d <branch>
 
-Delete remote branch:
+Review differences:
 
-	git push origin :<branch>
-
-Review branch changes:
-
-	git diff <branch>
+	git diff <commit1> <commit2>
 
 Merge branch into current:
 
@@ -85,10 +77,6 @@ Resolve merge conflicts:
 	mate <file>
 	git add <file>
 	git commit
-
-Discard branch changes:
-
-	git checkout -f master
 
 ### Tags
 
@@ -111,10 +99,6 @@ Show tag data:
 Delete tag:
 
 	git tag -d <tag>
-
-Delete remote tag:
-
-	git push origin :refs/tags/<tag>
 
 ### Push
 
@@ -160,10 +144,6 @@ Restore stash:
 
 	git stash apply
 
-Restore stash and restage files:
-
-	git stash apply --index
-
 Restore specific stash:
 
 	git stash apply <stash>
@@ -175,10 +155,6 @@ Remove stash:
 Restore and remove stash:
 
 	git stash pop
-
-Create branch from stash:
-
-	git stash branch <branch>
 
 ## Special
 
